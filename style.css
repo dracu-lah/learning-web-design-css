@@ -1,0 +1,83 @@
+body {
+  /* what we already have */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* what we're adding */
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+li:hover {
+  cursor: pointer;
+  color: antiquewhite;
+}
+
+.logo {
+  width: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.clickables {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8px 40px;
+}
+
+.main {
+  flex-grow: 1;
+}
+nav {
+  padding-top: 10px;
+  background-color: lightblue;
+}
+ul {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: lightcoral;
+  position: relative;
+}
+
+.card-img {
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+
+.card-content {
+  width: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .card-content {
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+  }
+  .card-img{
+    width: 250px;
+  }
+}
